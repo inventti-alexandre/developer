@@ -15,7 +15,18 @@ namespace Software.Basico
         public static Color Primaria { get; set; }
         public static Color Segundaria { get; set; }
         public static Color Terciaria { get; set; }
-        public static Color Texto { get; set; } 
+        public static Color Texto { get; set; }
+
+        public void CarregarTema0()
+        {
+            Principal = Color.FromArgb(232, 232, 232);
+            Primaria = Color.FromArgb(51, 58, 86);
+            Segundaria = Color.FromArgb(82, 101, 143);
+            Terciaria = Color.FromArgb(101, 100, 219);
+            Texto = Color.FromArgb(232, 232, 232);
+
+            tema = "2";
+        }
 
         public void CarregarTema1()
         {

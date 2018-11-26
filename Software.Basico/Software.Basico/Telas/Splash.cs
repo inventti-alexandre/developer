@@ -17,7 +17,7 @@ namespace Software.Basico.Telas
             InitializeComponent();
 
             Tema cor = new Tema();
-            cor.CarregarTema1();
+            cor.CarregarTema0();
 
             // Inicia contagem para término da Splash Screen
             Task.Factory.StartNew(() =>

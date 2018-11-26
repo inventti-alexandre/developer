@@ -15,6 +15,7 @@ namespace Software.Basico.Telas
         public frmLogin()
         {
             InitializeComponent();
+            TemaTela();
         }
 
         private void btnLogar_Click(object sender, EventArgs e)
@@ -23,6 +24,11 @@ namespace Software.Basico.Telas
             this.Hide();
             frm.ShowDialog();
             Show();
+        }
+
+        private void TemaTela()
+        {
+            panel1.BackColor = Tema.Primaria;
         }
     }
 }

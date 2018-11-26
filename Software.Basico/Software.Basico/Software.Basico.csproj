@@ -64,6 +64,12 @@
     <Compile Include="Telas\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Modulos\Cliente\frmCadastrarCliente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Modulos\Cliente\frmCadastrarCliente.Designer.cs">
+      <DependentUpon>frmCadastrarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,12 @@
     </Compile>
     <Compile Include="Telas\SubTelas\frmHome.Designer.cs">
       <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\SubTelas\frmSobreNos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\SubTelas\frmSobreNos.Designer.cs">
+      <DependentUpon>frmSobreNos.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\SubTelas\frmTema.cs">
       <SubType>UserControl</SubType>
@@ -99,11 +111,17 @@
     <EmbeddedResource Include="Telas\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Modulos\Cliente\frmCadastrarCliente.resx">
+      <DependentUpon>frmCadastrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\SubTelas\frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\SubTelas\frmSobreNos.resx">
+      <DependentUpon>frmSobreNos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\SubTelas\frmTema.resx">
       <DependentUpon>frmTema.cs</DependentUpon>
@@ -123,6 +141,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DB\Base\" />
+    <Folder Include="Telas\Modulos\Emprestimo\" />
+    <Folder Include="Telas\Modulos\Livros\" />
+    <Folder Include="Telas\Modulos\Reservas\" />
+    <Folder Include="Telas\Modulos\Usuarios\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\users32.png" />
@@ -172,6 +194,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\201612-01T170829.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

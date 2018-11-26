@@ -24,6 +24,8 @@ namespace Software.Basico.Telas
         {
             ScreenFrmHome();
 
+            telaSel = 1;
+
             //Mudar posição do Panel esquerdo
             pnBtnSel.Location = new Point(0, btnHome.Location.Y);
         }
@@ -31,6 +33,8 @@ namespace Software.Basico.Telas
         private void btnRecursos_Click(object sender, EventArgs e)
         {
             ScreenFrmRecursos();
+
+            telaSel = 2;
 
             //Mudar posição do Panel esquerdo
             pnBtnSel.Location = new Point(0, btnRecursos.Location.Y);
@@ -40,6 +44,8 @@ namespace Software.Basico.Telas
         {
             ScreenFrmOpcoes();
 
+            telaSel = 3;
+
             //Mudar posição do Panel esquerdo
             pnBtnSel.Location = new Point(0, btnOpcoes.Location.Y);
         }
@@ -47,6 +53,8 @@ namespace Software.Basico.Telas
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             ScreenFrmUsuarios();
+
+            telaSel = 4;
 
             //Mudar posição do Panel esquerdo
             pnBtnSel.Location = new Point(0, btnUsuarios.Location.Y);
@@ -109,7 +117,8 @@ namespace Software.Basico.Telas
                 logo2.Visible = true;
 
             ActiveForm.BackColor = Tema.Principal;
-            panel1.BackColor = Tema.Primaria;            
+            panel1.BackColor = Tema.Primaria;
+            panel3.BackColor = Tema.Primaria;
             panel2.BackColor = Tema.Segundaria;
             pnBtnSel.BackColor = Tema.Segundaria;
             flowLayoutPanel1.BackColor = Tema.Segundaria;
@@ -154,12 +163,57 @@ namespace Software.Basico.Telas
 
         private void button4_Click(object sender, EventArgs e)
         {
+            frmSobreNos frm = new frmSobreNos();
 
+            if (pnPrincipal.Controls.Count == 1)
+                pnPrincipal.Controls.RemoveAt(0);
+            pnPrincipal.Controls.Add(frm);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnRecursos_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Mudar posição do Panel esquerdo
+            pnBtnSel.Location = new Point(0, btnRecursos.Location.Y);
+        }
+
+        private void btnHome_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Mudar posição do Panel esquerdo
+            pnBtnSel.Location = new Point(0, btnHome.Location.Y);
+        }
+
+        private void btnOpcoes_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Mudar posição do Panel esquerdo
+            pnBtnSel.Location = new Point(0, btnOpcoes.Location.Y);
+        }
+
+        private void btnUsuarios_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Mudar posição do Panel esquerdo
+            pnBtnSel.Location = new Point(0, btnUsuarios.Location.Y);
+        }
+
+        int telaSel = 1;
+        
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            timer1.Interval = 1000;
+            if (telaSel == 1)
+                pnBtnSel.Location = new Point(0, btnHome.Location.Y);
+            else if (telaSel == 2)
+                pnBtnSel.Location = new Point(0, btnRecursos.Location.Y);
+            else if (telaSel == 3)
+                pnBtnSel.Location = new Point(0, btnOpcoes.Location.Y);
+            else if (telaSel == 4)
+                pnBtnSel.Location = new Point(0, btnUsuarios.Location.Y);
         }
     }
 }

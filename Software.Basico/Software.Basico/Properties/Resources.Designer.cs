@@ -63,6 +63,16 @@ namespace Software.Basico.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _201612_01T170829 {
+            get {
+                object obj = ResourceManager.GetObject("201612-01T170829", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BarraCinza {
             get {
                 object obj = ResourceManager.GetObject("BarraCinza", resourceCulture);
