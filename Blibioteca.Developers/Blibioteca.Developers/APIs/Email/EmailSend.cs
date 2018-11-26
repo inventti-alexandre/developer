@@ -67,11 +67,11 @@ namespace Blibioteca.Developers.APIs.Email
             dto.RemetenteEmail = email;
             dto.RemetenteSenha = senha;
 
-            EnviarEmail(dto, cod);
+            EnviarEmailVerificacao(dto, cod);
             return cod;
         }
 
-        private void EnviarEmail(EmailDTO dto, int CodVerificacao)
+        private void EnviarEmailVerificacao(EmailDTO dto, int CodVerificacao)
         {
             var smtp = new SmtpClient("smtp.gmail.com");
 

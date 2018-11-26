@@ -24,21 +24,40 @@ namespace Blibioteca.Developers.Validacao.ER
                 throw new ArgumentException("O email não parece ser válido.");
         }
 
-        /// <summary>
-        /// Valida um nome que contenha apenas letras e espaços. NÃO PODERÁ CONTER ACENTO.
-        /// </summary>
-        /// <param name="nome">Nome que irá passar pela validação</param>
-        public void ValidarNome(string nome)
+        public void VerificarNome(string nome)
         {
-            nome = nome.Trim();
+            /* [A-Z] --> Obrigatoriamente a primeira letra tem que ser maiuscula.
+             * 
+             * [a-zà-ú] ---> minuscula com ou sem acento 
+             * 
+             * {2,} --- > tem que aparecer no minimo duas vezes o trecho anterior a essa parte 
+             * 
+             * [a-zà-ú]{2,} ----> O trecho [a-zà-ú] tem que se repetir no minimo duas vezes, ou seja tem que se
+             *                    digitar duas minusculas após a primeira maiuscula 
+             *                    
+             * [A-Z][a-zà-ú]{2,} ---> A primeira palavra digitada tem que ter a primeira letra maiuscula seguidada de
+             *                        no minimo duas minusculas ou com ascento ou sem ascento que tem que se repetir no minimo 
+             *                        duas vezes.
+             *                        
+             * \s? ---> pode ter um espaço ou não após o ultimo caractere que foi digitado.
+             * 
+             * \s?[A-Z][a-zà-ú']?{2,}? ---> é obrigatorio que tenha um segundo nome 
+             * 
+             * [ ?]---> está agrupando como opicional o trecho (\s?[A-Z][a-zà-ú]?{2,}?)
+             * 
+             * [A-Z][a-zà-ú']? ---> assim como o anterior porém é opicional e possui o ' porque alguns nomes tem 
+             * 
+             * [\s?[A-Z][a-zà-ú']?{2,}?] ---> é opicional e pode ou não repetir
+             * 
+             * [\s?[A-Z][a-zà-ú']?{2,}?]{1,} ---> pode repetir toda a parte dentro do [] uma ou mais vezes, mas por toda a parte 
+             *                                    não ser obrigatoria dentro, não é obrigatorio
+             */
 
-            if (nome == string.Empty)
-                throw new ArgumentException("O nome não pode estar em branco.");
+            string ex = @"^[A-Z][a-zà-ú]{2,}\s?[A-Z][a-zà-ú']?{2,}?[\s?[A-Z][a-zà-ú']?{2,}?]{1,}$";
+            Regex re = new Regex(ex);
 
-            Regex regra1 = new Regex(@"^[A-Za-z ]{0,}$");
-
-            if (regra1.IsMatch(nome) == false)
-                throw new ArgumentException("O nome pode conter apenas letras e espaços.");
+            if (re.IsMatch(nome) == true)
+                throw new ArgumentException("Digite um nome e sobrenome corretamente!");
         }
     }
 }
