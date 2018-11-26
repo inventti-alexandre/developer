@@ -155,5 +155,8 @@
   <ItemGroup>
     <None Include="Resources\close32.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\microphone32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

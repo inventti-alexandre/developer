@@ -123,6 +123,16 @@ namespace Software.Basico.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap microphone32 {
+            get {
+                object obj = ResourceManager.GetObject("microphone32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap options32 {
             get {
                 object obj = ResourceManager.GetObject("options32", resourceCulture);
