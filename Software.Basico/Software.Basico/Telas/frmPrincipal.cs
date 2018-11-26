@@ -100,19 +100,66 @@ namespace Software.Basico.Telas
 
         private void TemaTela()
         {
+            if (Tema.tema == "1")
+            {
+                panel2.Visible = true;
+                logo1.Visible = true;
+            }
+            else
+                logo2.Visible = true;
 
             ActiveForm.BackColor = Tema.Principal;
             panel1.BackColor = Tema.Primaria;            
             panel2.BackColor = Tema.Segundaria;
-            pnBtnSel.BackColor = Tema.Texto;
+            pnBtnSel.BackColor = Tema.Segundaria;
             flowLayoutPanel1.BackColor = Tema.Segundaria;
 
-            label2.ForeColor = Tema.Texto;
+            //label2.ForeColor = Tema.Texto;
             btnHome.ForeColor = Tema.Texto;
             btnRecursos.ForeColor = Tema.Texto;
             btnOpcoes.ForeColor = Tema.Texto;
             btnUsuarios.ForeColor = Tema.Texto;
             button4.ForeColor = Tema.Texto;
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnPrincipal_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnBtnSel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

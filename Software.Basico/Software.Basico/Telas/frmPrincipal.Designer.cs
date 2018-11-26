@@ -29,68 +29,53 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.pnBtnSel = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnPrincipal = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.logo1 = new System.Windows.Forms.PictureBox();
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnOpcoes = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.btnRecursos = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.logo2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(187)))), ((int)(((byte)(214)))));
+            this.panel1.Controls.Add(this.logo2);
             this.panel1.Controls.Add(this.pnBtnSel);
             this.panel1.Controls.Add(this.btnUsuarios);
             this.panel1.Controls.Add(this.btnOpcoes);
-            this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.btnRecursos);
             this.panel1.Controls.Add(this.btnHome);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(228, 677);
+            this.panel1.Size = new System.Drawing.Size(228, 652);
             this.panel1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(243)))), ((int)(((byte)(227)))));
-            this.label2.Location = new System.Drawing.Point(51, 122);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 22);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Peedroca";
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pnBtnSel
             // 
-            this.pnBtnSel.BackColor = System.Drawing.Color.Gray;
-            this.pnBtnSel.Location = new System.Drawing.Point(0, 171);
+            this.pnBtnSel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(211)))), ((int)(((byte)(223)))));
+            this.pnBtnSel.Location = new System.Drawing.Point(-1, 171);
             this.pnBtnSel.Name = "pnBtnSel";
             this.pnBtnSel.Size = new System.Drawing.Size(13, 60);
             this.pnBtnSel.TabIndex = 3;
+            this.pnBtnSel.Paint += new System.Windows.Forms.PaintEventHandler(this.pnBtnSel_Paint);
             // 
             // button4
             // 
@@ -99,56 +84,25 @@
             this.button4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(243)))), ((int)(((byte)(227)))));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(12, 634);
+            this.button4.Location = new System.Drawing.Point(12, 617);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(27, 31);
             this.button4.TabIndex = 3;
             this.button4.Text = "?";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Gray;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(211)))), ((int)(((byte)(223)))));
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(228, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(917, 10);
             this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(265, 1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(166, 158);
-            this.panel2.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(243)))), ((int)(((byte)(227)))));
-            this.label4.Location = new System.Drawing.Point(3, 130);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 21);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Desenvolvimento";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(243)))), ((int)(((byte)(227)))));
-            this.label3.Location = new System.Drawing.Point(3, 104);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(163, 23);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "PB Technology ©";
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // label1
             // 
@@ -162,40 +116,33 @@
             // 
             // pnPrincipal
             // 
-            this.pnPrincipal.Location = new System.Drawing.Point(229, 175);
+            this.pnPrincipal.Location = new System.Drawing.Point(229, 148);
             this.pnPrincipal.Name = "pnPrincipal";
             this.pnPrincipal.Size = new System.Drawing.Size(915, 500);
             this.pnPrincipal.TabIndex = 5;
+            this.pnPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.pnPrincipal_Paint);
             // 
-            // pictureBox2
+            // logo1
             // 
-            this.pictureBox2.Image = global::Software.Basico.Properties.Resources.pbtechnology;
-            this.pictureBox2.Location = new System.Drawing.Point(27, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(110, 89);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Software.Basico.Properties.Resources.UserFacebook500;
-            this.pictureBox1.Location = new System.Drawing.Point(55, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.logo1.Image = global::Software.Basico.Properties.Resources.fgh;
+            this.logo1.Location = new System.Drawing.Point(21, 13);
+            this.logo1.Name = "logo1";
+            this.logo1.Size = new System.Drawing.Size(125, 100);
+            this.logo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logo1.TabIndex = 0;
+            this.logo1.TabStop = false;
+            this.logo1.Visible = false;
+            this.logo1.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // btnUsuarios
             // 
             this.btnUsuarios.FlatAppearance.BorderSize = 0;
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsuarios.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(243)))), ((int)(((byte)(227)))));
+            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
             this.btnUsuarios.Image = global::Software.Basico.Properties.Resources.users32;
             this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.Location = new System.Drawing.Point(12, 354);
+            this.btnUsuarios.Location = new System.Drawing.Point(11, 351);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(216, 60);
             this.btnUsuarios.TabIndex = 3;
@@ -209,10 +156,10 @@
             this.btnOpcoes.FlatAppearance.BorderSize = 0;
             this.btnOpcoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpcoes.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpcoes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(243)))), ((int)(((byte)(227)))));
+            this.btnOpcoes.ForeColor = System.Drawing.Color.White;
             this.btnOpcoes.Image = global::Software.Basico.Properties.Resources.settings32;
             this.btnOpcoes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOpcoes.Location = new System.Drawing.Point(12, 293);
+            this.btnOpcoes.Location = new System.Drawing.Point(11, 291);
             this.btnOpcoes.Name = "btnOpcoes";
             this.btnOpcoes.Size = new System.Drawing.Size(216, 60);
             this.btnOpcoes.TabIndex = 3;
@@ -221,31 +168,15 @@
             this.btnOpcoes.UseVisualStyleBackColor = true;
             this.btnOpcoes.Click += new System.EventHandler(this.btnOpcoes_Click);
             // 
-            // button6
-            // 
-            this.button6.BackgroundImage = global::Software.Basico.Properties.Resources.microphone32;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(243)))), ((int)(((byte)(227)))));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(39, 634);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(23, 31);
-            this.button6.TabIndex = 3;
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // btnRecursos
             // 
             this.btnRecursos.FlatAppearance.BorderSize = 0;
             this.btnRecursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecursos.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecursos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(243)))), ((int)(((byte)(227)))));
+            this.btnRecursos.ForeColor = System.Drawing.Color.White;
             this.btnRecursos.Image = global::Software.Basico.Properties.Resources.options32;
             this.btnRecursos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRecursos.Location = new System.Drawing.Point(12, 232);
+            this.btnRecursos.Location = new System.Drawing.Point(11, 231);
             this.btnRecursos.Name = "btnRecursos";
             this.btnRecursos.Size = new System.Drawing.Size(216, 60);
             this.btnRecursos.TabIndex = 3;
@@ -259,10 +190,10 @@
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(243)))), ((int)(((byte)(227)))));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Image = global::Software.Basico.Properties.Resources.computer32;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(12, 171);
+            this.btnHome.Location = new System.Drawing.Point(11, 171);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(216, 60);
             this.btnHome.TabIndex = 3;
@@ -328,12 +259,35 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(211)))), ((int)(((byte)(223)))));
+            this.panel2.Controls.Add(this.logo1);
+            this.panel2.Location = new System.Drawing.Point(265, -1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(166, 125);
+            this.panel2.TabIndex = 2;
+            this.panel2.Visible = false;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // logo2
+            // 
+            this.logo2.Image = global::Software.Basico.Properties.Resources.fgh;
+            this.logo2.Location = new System.Drawing.Point(45, 12);
+            this.logo2.Name = "logo2";
+            this.logo2.Size = new System.Drawing.Size(125, 100);
+            this.logo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logo2.TabIndex = 0;
+            this.logo2.TabStop = false;
+            this.logo2.Visible = false;
+            this.logo2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(182)))), ((int)(((byte)(183)))));
-            this.ClientSize = new System.Drawing.Size(1145, 677);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.ClientSize = new System.Drawing.Size(1145, 652);
             this.Controls.Add(this.pnPrincipal);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -347,12 +301,11 @@
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipal";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo1)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,7 +316,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel pnBtnSel;
         private System.Windows.Forms.Button btnUsuarios;
         private System.Windows.Forms.Button btnOpcoes;
@@ -374,12 +326,9 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel pnPrincipal;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox logo1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox logo2;
     }
 }
